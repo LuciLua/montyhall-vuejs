@@ -35,15 +35,21 @@
         <DoorHere :hasGift="i == selectedPort" :number="i" />
       </div>
     </div>
+    <div class="menu">
+        <CreditsHere user="LuciLua" />
+    </div>
   </div>
 </template>
 
 <script>
 import DoorHere from "./components/DoorHere.vue";
+import CreditsHere from "./components/CreditsHere.vue";
+
 export default {
   name: "App",
   components: {
     DoorHere,
+    CreditsHere
   },
   data: function () {
     return {
@@ -127,5 +133,24 @@ body {
   flex-wrap: wrap;
 
   justify-content: space-around;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    cursor: pointer;
+
+    background: rgba(0, 0, 0, 0.435);
+
+    padding: 10px 20px;
+    border-radius: 10px;
+
+    backdrop-filter: blur(6px);
 }
 </style>

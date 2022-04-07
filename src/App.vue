@@ -1,11 +1,18 @@
 <template>
   <div id="app">
     <h1>Problema de Monty Hall 🚪</h1>
+    <GiftHere/>
   </div>
 </template>
 
 <script>
-export default {};
+import GiftHere from "./components/GiftHere.vue";
+export default {
+  name: "App",
+  components: {
+    GiftHere,
+  },
+};
 </script>
 
 <style>
@@ -16,23 +23,23 @@ export default {};
   padding: 0;
 }
 
-body{
-    color: #fff;
-    background: linear-gradient(#1e3c72, #2a5298);
-    min-height: 100vh;
+body {
+  color: #fff;
+  background: linear-gradient(#1e3c72, #2a5298);
+  min-height: 100vh;
 }
 
 #app {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#app h1{
-    border: 1px solid #000;
-    background-color: #0004;
-    padding: 20px;
-    margin-bottom: 60px;
-    margin-top: 60px;
+#app h1 {
+  border: 1px solid #000;
+  background-color: #0004;
+  padding: 20px;
+  margin-bottom: 60px;
+  margin-top: 60px;
 }
 </style>

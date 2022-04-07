@@ -1,16 +1,17 @@
 <template>
   <div id="app">
     <h1>Problema de Monty Hall 🚪</h1>
-    <GiftHere/>
+    <!-- hasGift consigo passar como boolean por causa dos dois pontos, sem eles, seria string -->
+    <DoorHere number="1" :hasGift="false"/>
   </div>
 </template>
 
 <script>
-import GiftHere from "./components/GiftHere.vue";
+import DoorHere from "./components/DoorHere.vue";
 export default {
   name: "App",
   components: {
-    GiftHere,
+    DoorHere
   },
 };
 </script>

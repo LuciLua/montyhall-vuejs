@@ -9,6 +9,7 @@
       <div class="number" :class="{ selected }">
         {{ number }}
       </div>
+      <!-- .stop faz o evento click nao se propagar para a door  -->
       <div class="knob" :class="{ selected }" @click.stop="open=true"></div>
     </div>
   </div>
@@ -78,6 +79,12 @@ export default {
   flex-direction: column;
   align-items: center;
   padding: 20px;
+}
+
+
+.door:hover{
+    background: rgb(224, 111, 30);
+    cursor: pointer;
 }
 
 /* maçaneta */

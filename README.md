@@ -22,6 +22,6 @@ yarn build
 yarn lint
 ```
 
-<!-- ### 🖼 Preview -->
+### 🖼 Preview
 
-<!-- <img src="preview.png"> -->
+<img src="preview.png">
